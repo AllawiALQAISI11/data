@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ملخص أمن قواعد البيانات</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; }
+        .paper { background-color: white; max-width: 800px; margin: auto; padding: 40px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #e74c3c; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; border-right: 5px solid #3498db; padding-right: 10px; }
+        p, li { font-size: 18px; line-height: 1.8; color: #34495e; font-weight: bold; }
+        .en { font-family: monospace; color: #c0392b; direction: ltr; display: inline-block; font-size: 16px; }
+        ul { list-style-type: square; padding-right: 20px; }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <h1>🛡️ ملخص أمن قواعد البيانات (Midterm)</h1>
+
+        <h2>1. مثلث الحماية (CIA Triad)</h2>
+        <ul>
+            <li><strong>السرية <span class="en">(Confidentiality)</span>:</strong> تقسيم المعلومات لمستويات لضمان وصول المستخدمين المصرح لهم فقط.</li>
+            <li><strong>سلامة البيانات <span class="en">(Integrity)</span>:</strong> المعلومات دقيقة ومحمية من التلاعب من قبل أشخاص غير مصرح لهم.</li>
+            <li><strong>التوافر <span class="en">(Availability)</span>:</strong> المعلومات متاحة دائماً للأشخاص المصرح لهم، والنظام محمي من الإغلاق.</li>
+        </ul>
+
+        <h2>2. تعريفات أساسية</h2>
+        <ul>
+            <li><strong>الثغرة الأمنية <span class="en">(Security vulnerability)</span>:</strong> ضعف في أي من مكونات نظام المعلومات يمكن استغلاله لانتهاك سلامة أو سرية النظام.</li>
+            <li><strong>التهديد الأمني <span class="en">(Security Threat)</span>:</strong> انتهاك أمني أو هجوم يمكن أن يحدث في أي وقت بسبب وجود ثغرة أمنية.</li>
+        </ul>
+
+        <h2>3. أنواع التهديدات (Types of Threats)</h2>
+        <ul>
+            <li><strong>البشر <span class="en">(People)</span>:</strong> أشخاص يلحقون ضرراً بالقاعدة. <em>(أمثلة: الموظفون، المخترقون، الجواسيس)</em>.</li>
+            <li><strong>الأكواد الخبيثة <span class="en">(Malicious Code)</span>:</strong> كود برمجي خبيث. <em>(أمثلة: الفيروسات، الديدان، أحصنة طروادة)</em>.</li>
+            <li><strong>الكوارث الطبيعية <span class="en">(Natural Disasters)</span>:</strong> كوارث تسببها الطبيعة. <em>(أمثلة: الأعاصير، الزلازل، الفيضانات)</em>.</li>
+            <li><strong>الكوارث التكنولوجية <span class="en">(Technological Disasters)</span>:</strong> خلل في المعدات. <em>(أمثلة: انقطاع الكهرباء، فشل التخزين، فشل الأجهزة)</em>.</li>
+        </ul>
+
+        <h2>4. أمثلة على الأكواد الخبيثة</h2>
+        <ul>
+            <li><strong>الفيروس <span class="en">(Virus)</span>:</strong> كود يهدد سلامة وحالة النظام.</li>
+            <li><strong>الدودة <span class="en">(Worm)</span>:</strong> كود يعطل عمل النظام.</li>
+            <li><strong>أحصنة طروادة <span class="en">(Trojan Horses)</span>:</strong> كود يخترق النظام عبر التظاهر بأنه كود شرعي.</li>
+        </ul>
+
+        <h2>5. أنواع المخاطر (Types of Risks)</h2>
+        <ul>
+            <li><strong>البشر <span class="en">(People)</span>:</strong> فقدان الأشخاص الحيويين. <em>(أمثلة: فقدان الأشخاص الرئيسيين، التوقف بسبب المرض، الإرهاق)</em>.</li>
+            <li><strong>الأجهزة <span class="en">(Hardware)</span>:</strong> عدم توفر الأجهزة. <em>(أمثلة: التوقف بسبب فشل الأجهزة، الأعطال، الأضرار الملحقة)</em>.</li>
+            <li><strong>البيانات <span class="en">(Data)</span>:</strong> تلف البيانات. <em>(أمثلة: فقدان البيانات، تلف البيانات، فقدان الخصوصية)</em>.</li>
+            <li><strong>الثقة <span class="en">(Confidence)</span>:</strong> فقدان ثقة الجمهور. <em>(أمثلة: تدهور الأداء، الاحتيال، الارتباك)</em>.</li>
+        </ul>
+
+        <h2>6. أنواع الثغرات (Types of Vulnerabilities)</h2>
+        <ul>
+            <li><strong>التثبيت والتكوين:</strong> <em>(أمثلة: تكوين خاطئ، فشل تغيير الباسورد الافتراضي، فشل تغيير الامتيازات)</em>.</li>
+            <li><strong>أخطاء المستخدم:</strong> <em>(أمثلة: غياب ضوابط التدقيق، خطة استرداد غير مختبرة، الهندسة الاجتماعية)</em>.</li>
+            <li><strong>البرمجيات:</strong> <em>(أمثلة: تصحيحات لم تطبق، برامج بها أخطاء، عدم تتبع التصحيحات)</em>.</li>
+            <li><strong>التصميم والتنفيذ:</strong> <em>(أمثلة: أخطاء تصميم، أخطاء لم تعالج، عدم التحقق من المدخلات)</em>.</li>
+        </ul>
+
+        <h2>7. مخطط الكارثة (احفظه بالترتيب)</h2>
+        <p>نقاط وصول غير محمية ⬅️ فجوة أمنية ⬅️ ثغرة أمنية ⬅️ تهديد أمني ⬅️ خطر أمني ⬅️ اختراق أمني ⬅️ انتهاك سلامة البيانات.</p>
+    </div>
+</body>
+</html>
