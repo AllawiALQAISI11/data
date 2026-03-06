@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
     <title>ملخص أمن قواعد البيانات | Midterm</title>
     <style>
         :root {
@@ -19,16 +19,18 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             background-color: var(--bg-color); 
             margin: 0; 
-            padding: 20px; 
+            padding: 40px 20px; 
             color: var(--text-color);
             line-height: 1.8;
+            display: flex;
+            justify-content: center;
         }
 
         .container { 
-            max-width: 900px; 
-            margin: auto; 
+            /* ثبتنا العرض كشاشة كمبيوتر حتى ما ينعصر النص بالموبايل */
+            width: 900px; 
             background-color: var(--card-bg); 
-            padding: 40px; 
+            padding: 50px; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
             border-radius: 12px; 
         }
@@ -52,8 +54,8 @@
         }
 
         p, li { 
-            font-size: 17px; 
-            font-weight: 500;
+            font-size: 18px; 
+            font-weight: bold;
             margin-bottom: 15px;
         }
 
@@ -63,7 +65,7 @@
             color: var(--english-color); 
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         .highlight {
@@ -102,7 +104,7 @@
 <body>
 
     <div class="container">
-        <h1> المراجعة الشاملة لأمن قواعد البيانات (Midterm)</h1>
+        <h1>🛡️ المراجعة الشاملة لأمن قواعد البيانات (Midterm)</h1>
 
         <h2>1. مثلث الحماية (The CIA Triad)</h2>
         <p>أساس أمن المعلومات يعتمد على ثلاثة أركان رئيسية:</p>
